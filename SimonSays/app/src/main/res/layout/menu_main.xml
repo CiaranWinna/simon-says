@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    >
+    <TextView
+        android:layout_margin="30dp"
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Simon Says!"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/player_vs_player_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Player"
+        android:layout_below="@+id/player_vs_simon_btn"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+    />
+
+    <Button
+        android:layout_margin="15dp"
+        android:id="@+id/player_vs_simon_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Player"
+        android:layout_below="@id/welcome_text"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
